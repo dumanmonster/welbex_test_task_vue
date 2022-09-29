@@ -1,0 +1,67 @@
+.distance-card {
+  margin: 0 auto;
+  border: 1px solid gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  width: max-content;
+  &__sort {
+    margin-bottom: 10px;
+  }
+
+  &__sort-wrapper {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    gap: 10px;
+  }
+
+  &__sort-input {
+    width: 80px;
+    border-radius: 4px;
+    border: 1px solid black;
+    padding-left: 8px;
+  }
+
+  &__row-elem {
+    border: 1px solid gray;
+    height: 30px;
+    padding: 5px;
+    color: #808080;
+  }
+
+  &__header {
+    font-size: 2rem;
+    color: #808080;
+  }
+
+  &__sort-button {
+    background-color: rgb(80, 144, 234);
+    border: none;
+    border-radius: 4px;
+    height: 38px;
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+
+  &__sort-button:last-child {
+    margin-bottom: 0;
+  }
+
+  &__sort-button:hover {
+    background-color: rgba(21, 61, 111, 0.9);
+  }
+
+  .pagination {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 350px) {
+  .distance-card {
+    padding: 0;
+  }
+}
